@@ -1,0 +1,13 @@
+## Interface: 20300
+## Title: 听风的插件
+## Author: 听风 
+## Notes: 听风的专用插件，具体功能后期补充
+## Description: 这是一个插件测试 
+# X-LoadOn-Slash: /tf /tingfeng
+
+# first function for testing
+TingFeng.lua
+CombatTracker.xml
+#TingFeng.xml
+
+
