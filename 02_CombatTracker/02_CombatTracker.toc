@@ -1,0 +1,12 @@
+## Interface: 20300
+## Title: 02-战斗统计
+## Author: 听风 
+## Notes: 一个简单的战斗统计示例
+## Description: 这是一个插件测试 
+# X-LoadOn-Slash: /tf /tingfeng
+
+# first function for testing
+CombatTracker.xml
+CombatTracker.lua
+
+
