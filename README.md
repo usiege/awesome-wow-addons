@@ -15,7 +15,6 @@ wow addons
 ### TingFeng
 
 
-
 ## IMPORT
 
 ### Cube
@@ -29,3 +28,12 @@ wow addons
 ### TinyPad
 
 [tinypad](./TinyPad)
+
+
+## COMMAND
+
+### 查看当前游戏版本
+`/run print((select(4, GetBuildInfo())))`
+
+### 视角调到最大
+`/run CombatTrackerFrame:SetPoint("TOP", Minimap, "BOTTOM", 0, -10)`

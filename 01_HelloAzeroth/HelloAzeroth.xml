@@ -1,0 +1,57 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<Frame name="HelloWorldTestFrame" parent="UIParent" hidden="false" enableMouse="true" movable="true"> 
+  <Size x="300" y="150" /> 
+  <TitleRegion setAllPoints="true"/> 
+  <Anchors> 
+    <Anchor point="CENTER" /> 
+  </Anchors> 
+  <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border"> 
+    <BackgroundInsets> 
+      <AbsInset left="11" right="12" top="12" bottom="11" /> 
+    </BackgroundInsets> 
+  </Backdrop> 
+  <Layers> 
+    <Layer level="ARTWORK"> 
+      <FontString name="$parentTextTitle" inherits="GameFontNormal" text="Hello World!"> 
+        <Anchors> 
+          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
+            <Offset x="15" y="-15" /> 
+          </Anchor> 
+        </Anchors> 
+      </FontString> 
+      <FontString name="$parentTextFPS" inherits="GameFontNormal" text="FPS"> 
+        <Anchors> 
+          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
+            <Offset x="15" y="-60" /> 
+          </Anchor> 
+        </Anchors> 
+      </FontString> 
+      <FontString name="$parentTextDelay" inherits="GameFontNormal" text="Delay"> 
+        <Anchors> 
+          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
+            <Offset x="15" y="-85" /> 
+          </Anchor> 
+        </Anchors> 
+      </FontString> 
+      <FontString name="$parentTextMoney" inherits="GameFontNormal" text="Money"> 
+        <Anchors> 
+          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
+            <Offset x="15" y="-110" /> 
+          </Anchor> 
+        </Anchors> 
+      </FontString> 
+    </Layer> 
+  </Layers> 
+  <Scripts> 
+    <OnLoad> 
+      HelloWorldLoad(); 
+    </OnLoad> 
+    <OnUpdate> 
+      HelloWorldFrameUpdate(); 
+    </OnUpdate> 
+	<OnEvent> 
+	  HelloWorldEvent(); 
+	</OnEvent>
+  </Scripts> 
+</Frame> 
+</Ui>
