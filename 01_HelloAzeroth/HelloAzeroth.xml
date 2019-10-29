@@ -1,7 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
 <Frame name="HelloWorldTestFrame" parent="UIParent" hidden="false" enableMouse="true" movable="true"> 
   <Size x="300" y="150" /> 
-  <TitleRegion setAllPoints="true"/> 
+  <TitleRegion setAllPoints="true" /> 
   <Anchors> 
     <Anchor point="CENTER" /> 
   </Anchors> 
@@ -12,7 +12,7 @@
   </Backdrop> 
   <Layers> 
     <Layer level="ARTWORK"> 
-      <FontString name="$parentTextTitle" inherits="GameFontNormal" text="Hello World!"> 
+      <FontString name="$parentTextTitle" inherits="GameFontNormal" text="Hello Azeroth!"> 
         <Anchors> 
           <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
             <Offset x="15" y="-15" /> 
