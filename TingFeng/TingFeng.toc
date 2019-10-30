@@ -10,6 +10,6 @@
 TingFeng.lua
 #TingFeng.xml
 
-#CombatTracker/CombatTracker.lua
-#CombatTracker/CombatTracker.xml
+CombatTracker/CombatTracker.lua
+CombatTracker/CombatTracker.xml
 

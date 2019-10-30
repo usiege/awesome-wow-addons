@@ -1,0 +1,25 @@
+{
+    "version": "8.2.0",
+    "mapping": "BugGrabber",
+    "search": 1,
+    "searchList": [
+        {
+            "description": "Shows the errors captured by !BugGrabber.",
+            "fileName": "bugger",
+            "img": "/app/image/anvilBlack.png",
+            "name": "Bugger"
+        },
+        {
+            "description": "Grabs bugs for the bug sack.",
+            "fileName": "bug-grabber",
+            "img": "/app/image/anvilBlack.png",
+            "name": "BugGrabber"
+        }
+    ],
+    "mark": "",
+    "ipMap": [],
+    "target": "curse",
+    "searchName": "BugGrabber",
+    "localName": "!BugGrabber",
+    "fileName": "bug-grabber"
+}

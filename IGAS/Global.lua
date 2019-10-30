@@ -1,2 +1,0 @@
--- Enable this if no need document help
--- DOCUMENT_ENABLED = false

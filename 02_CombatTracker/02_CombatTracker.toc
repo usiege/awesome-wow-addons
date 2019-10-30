@@ -6,7 +6,8 @@
 # X-LoadOn-Slash: /tf /tingfeng
 
 # first function for testing
-CombatTracker.xml
 CombatTracker.lua
+CombatTracker.xml
+
 
 
