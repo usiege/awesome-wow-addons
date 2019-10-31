@@ -4,7 +4,7 @@
 	<Frame name="HelloWorldTestFrame" parent="UIParent" enableMouse="true"
     movable="true" frameStrata="LOW"> 
 	  <Size x="300" y="150" /> 
-	<!--   <TitleRegion setAllPoints="true" />  -->
+	  <TitleRegion setAllPoints="true" /> 
 	  <Anchors> 
 	    <Anchor point="CENTER" /> 
 	  </Anchors> 
@@ -17,9 +17,7 @@
 	    <Layer level="ARTWORK"> 
 	      <FontString name="$parentTextTitle" inherits="GameFontNormal" text="Hello Azeroth!"> 
 	        <Anchors> 
-	          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
-	            <Offset x="15" y="-15" /> 
-	          </Anchor> 
+	          <Anchor point="CENTER" relativeTo="HelloWorldTestFrame" />
 	        </Anchors> 
 	      </FontString> 
 	      <FontString name="$parentTextFPS" inherits="GameFontNormal" text="FPS"> 
@@ -45,7 +43,7 @@
 	      </FontString> 
 	    </Layer> 
 	  </Layers> 
-	<!--   <Scripts> 
+	  <Scripts> 
 	    <OnLoad> 
 	      HelloWorldLoad(); 
 	    </OnLoad> 
@@ -55,6 +53,6 @@
 		<OnEvent> 
 		  HelloWorldEvent(); 
 		</OnEvent>
-	  </Scripts>  -->
+	  </Scripts> 
 	</Frame> 
 </Ui>

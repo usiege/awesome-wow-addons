@@ -10,11 +10,12 @@ function HelloWorldCommand(cmd)
 end 
 
 function HelloWorldLoad() 
-  getglobal("HelloWorldTestFrame"):Hide(); 
-  DEFAULT_CHAT_FRAME:AddMessage("HelloAzeroth is Loaded!");
+    myFrame = getglobal("HelloWorldTestFrame"); 
+    
+    myFrame:Hide()
+    DEFAULT_CHAT_FRAME:AddMessage("HelloAzeroth is Loaded!");
 
-  myFrame = getglobal("HelloWorldTestFrame"); 
-  myFrame:RegisterEvent("CHAT_MSG_SAY");
+    myFrame:RegisterEvent("CHAT_MSG_SAY");
 end 
 
 function HelloWorldFrameUpdate() 
