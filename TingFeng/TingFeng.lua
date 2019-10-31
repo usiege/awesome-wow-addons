@@ -21,16 +21,16 @@ function fish()
 end
 
 
---
--- /script 
-function talk(msg, channel, time_pad)
+-- 
+-- /script talk(1, 5, "内容")
+function talk(channel, time_pad, msg)
     T,F=T or 0,F or CreateFrame("frame")
-    if X then 
-        X=nil
+    if TALK then 
+        TALK=nil
         ChatFrame3:AddMessage("talk off")
         --SendChatMessage("talk off","channel",nil,channel)
     else 
-        X=function()
+        TALK=function()
             local t=GetTime()
             if t-T>time_pad then
                 SendChatMessage(msg,"channel",nil,channel)
@@ -40,5 +40,5 @@ function talk(msg, channel, time_pad)
         ChatFrame3:AddMessage("talk on")
         --SendChatMessage("talk on","channel",nil,channel) 
     end 
-    F:SetScript("OnUpdate",X)
+    F:SetScript("OnUpdate",TALK)
 end

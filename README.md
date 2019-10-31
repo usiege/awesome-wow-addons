@@ -41,16 +41,7 @@ wow addons
 
 ## COMMAND
 
-这里是游戏内命令的集合。
-
-### 查看当前游戏版本
-`/run print((select(4, GetBuildInfo())))`
-
-### 视角调到最大
-`/run CombatTrackerFrame:SetPoint("TOP", Minimap, "BOTTOM", 0, -10)`
-
-### 显示Lua错误
-`/console scriptErrors 1 to display LUA errors`
+- [宏命令](./MACRO.md)
 
 
 ## REFERENCE
