@@ -8,7 +8,7 @@
 `/run print((select(4, GetBuildInfo())))`
 
 - 视角调到最大
-`/run CombatTrackerFrame:SetPoint("TOP", Minimap, "BOTTOM", 0, -10)`
+~~`/run CombatTrackerFrame:SetPoint("TOP", Minimap, "BOTTOM", 0, -10)`~~
 
 - 显示Lua错误
 `/console scriptErrors 1 to display LUA errors`
