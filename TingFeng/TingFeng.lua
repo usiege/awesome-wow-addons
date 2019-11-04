@@ -42,3 +42,16 @@ function talk(channel, time_pad, msg)
     end 
     F:SetScript("OnUpdate",TALK)
 end
+
+
+
+_G.SLASH_RandomLS1 = "/randomLS"
+_G.SlashCmdList.RandomLS = function()
+    local a = {172179,93672,162973,163045,165802,165670,166746,166747,168907}
+    r = r or CreateFrame("Button","r",UIParent,"SecureActionButtonTemplate")
+    r:SetAttribute("type","item")
+    r:SetAttribute("item",GetItemInfo(a[random(#a)]))
+    r:Click()
+end
+
+

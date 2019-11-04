@@ -1,7 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.blizzard.com/wow/ui..\FrameXML\UI.xsd">
-	<Frame name="HelloWorldTestFrame" parent="UIParent" enableMouse="true"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.blizzard.com/wow/ui..\FrameXML\UI.xsd">
+	<Frame name="HelloWorldFrame" parent="UIParent" enableMouse="true"
     movable="true" frameStrata="LOW"> 
 	  <Size x="300" y="150" /> 
 	  <TitleRegion setAllPoints="true" /> 
@@ -15,44 +15,20 @@
 	  </Backdrop> 
 	  <Layers> 
 	    <Layer level="ARTWORK"> 
-	      <FontString name="$parentTextTitle" inherits="GameFontNormal" text="Hello Azeroth!"> 
+	      <FontString name="$parentTextTitle" inherits="GameFontNormal" text="Hello Azeroth!">
 	        <Anchors> 
-	          <Anchor point="CENTER" relativeTo="HelloWorldTestFrame" />
+	          <Anchor point="CENTER" relativeTo="HelloWorldFrame" />
 	        </Anchors> 
-	      </FontString> 
-	      <FontString name="$parentTextFPS" inherits="GameFontNormal" text="FPS"> 
-	        <Anchors> 
-	          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
-	            <Offset x="15" y="-60" /> 
-	          </Anchor> 
-	        </Anchors> 
-	      </FontString> 
-	      <FontString name="$parentTextDelay" inherits="GameFontNormal" text="Delay"> 
-	        <Anchors> 
-	          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
-	            <Offset x="15" y="-85" /> 
-	          </Anchor> 
-	        </Anchors> 
-	      </FontString> 
-	      <FontString name="$parentTextMoney" inherits="GameFontNormal" text="Money"> 
-	        <Anchors> 
-	          <Anchor point="TOPLEFT" relativeTo="HelloWorldTestFrame"> 
-	            <Offset x="15" y="-110" /> 
-	          </Anchor> 
-	        </Anchors> 
-	      </FontString> 
+	      </FontString>
 	    </Layer> 
-	  </Layers> 
-	  <Scripts> 
-	    <OnLoad> 
-	      HelloWorldLoad(); 
-	    </OnLoad> 
-	    <OnUpdate> 
-	      HelloWorldFrameUpdate(); 
-	    </OnUpdate> 
-		<OnEvent> 
-		  HelloWorldEvent(); 
+	  </Layers>
+	<Scripts>
+		<OnLoad>
+			HelloWorldLoad(self)
+		</OnLoad>
+		<OnEvent>
+			HelloWorldEvent(self, event, ...)
 		</OnEvent>
-	  </Scripts> 
-	</Frame> 
+	</Scripts>
+	</Frame>
 </Ui>
