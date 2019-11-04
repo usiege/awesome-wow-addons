@@ -231,7 +231,7 @@ function HelloWorldLoad(frame)
     -- 下面这句我们为界面元素注册了一个CHAT_MSG_SAY事件
     -- 这个事件是当你周围有人说话时发生的
     -- 这个事件对应<OnEvent />标签下的内容，也就是HelloWorldEvent函数
-    myFrame:RegisterEvent("CHAT_MSG_SAY");
+    frame:RegisterEvent("CHAT_MSG_SAY");
 end
 ```
 当界面加载时我们运行上面这个函数（函数的概念自己去百度一下吧，不懂的话就无视，我们只要知道插件在做事情就可以了）;
