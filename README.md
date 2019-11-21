@@ -3,7 +3,9 @@ wow addons
 
 ## DIY
 
-这里是DIY的插件。
+更多内容请关注微信公众号“艾泽拉斯日常(azeroth-daily)”
+
+![二维码](https://s2.ax1x.com/2019/11/20/MflCb8.png)
 
 ### 02_CombatTracker
 
