@@ -1,0 +1,7 @@
+## Interface: 20300
+## Title: 03-喊话的正确姿势
+## Author: 听风 
+## Notes: 向艾泽拉斯说出我们的心声。
+## Description: 这是一个为了简化喊话的插件。
+
+TalkToAzeroth.lua

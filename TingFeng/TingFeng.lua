@@ -27,7 +27,7 @@ function talk(channel, time_pad, msg)
     T,F=T or 0,F or CreateFrame("frame")
     if TALK then 
         TALK=nil
-        ChatFrame3:AddMessage("talk off")
+        ChatFrame4:AddMessage("这是我要说的话。。。")
         --SendChatMessage("talk off","channel",nil,channel)
     else 
         TALK=function()
@@ -53,5 +53,19 @@ _G.SlashCmdList.RandomLS = function()
     r:SetAttribute("item",GetItemInfo(a[random(#a)]))
     r:Click()
 end
+
+
+function HelloWorldCommand(frame)
+    -- body
+    if (not frame:IsShown()) then
+        frame:Show()
+    else
+        frame:Hide()
+    end
+end
+
+_G.SLASH_HELLOWORLD1 = "/helloazeroth"; 
+_G.SLASH_HELLOWORLD2 = "/ha"; 
+_G.SlashCmdList["HELLOWORLD"] = HelloWorldCommand;
 
 

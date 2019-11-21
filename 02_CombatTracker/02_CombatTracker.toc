@@ -1,5 +1,5 @@
 ## Interface: 20300
-## Title: 02-战斗统计
+## Title: 02-正在战斗中
 ## Author: 听风 
 ## Notes: 一个简单的战斗统计示例
 ## Description: 这是一个插件测试 

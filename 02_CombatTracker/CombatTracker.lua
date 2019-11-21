@@ -1,8 +1,8 @@
 local tingfeng = ...;
 
 -- Set up some local variables to track time and damage
-local start_time = 0
-local end_time = 0
+local start_time = 0 
+local end_time = 0 
 local total_time = 0
 local total_damage = 0
 local average_dps = 0
@@ -24,7 +24,7 @@ function CombatTracker_OnEvent(frame, event, ...)
     elseif event == "PLAYER_REGEN_DISABLED" then
         -- this event is called when we enter combat 
         -- reset the damage total and start the timer
-        CombatTrackerFrameText:SetText("In Combat")
+        CombatTrackerText:SetText("战斗中...")
         total_damage = 0
         start_time = GetTime()
     elseif event == "UNIT_COMBAT" then
@@ -44,13 +44,14 @@ function CombatTracker_OnEvent(frame, event, ...)
 end
 
 function CombatTracker_UpdateText()
-    local status = string.format("%d s | %d dmg | %.2f dps", total_time, total_damage, average_dps)
-    CombatTrackerFrameText:SetText(status)
+    local status = string.format("%d 秒 | %d 伤害 | %.2f DPS", total_time, total_damage, average_dps)
+    CombatTrackerText:SetText(status)
 end
 
 function CombatTracker_ReportDPS()
-    local msgformat = "%d seconds spent in combat with %d incoming damage. \
-    Average incoming DPS was %.2f"
+    -- local msgformat = "%d seconds spent in combat with %d incoming damage. \
+    -- Average incoming DPS was %.2f"
+    local msgformat = "%d 时间内共计伤害 %d . 平均每秒伤害为 %.2f"
     local msg = string.format(msgformat, total_time, total_damage, average_dps)
     ChatFrame3:AddMessage(msg)
 end
