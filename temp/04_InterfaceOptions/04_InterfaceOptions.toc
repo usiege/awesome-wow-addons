@@ -1,0 +1,10 @@
+## Interface: 20300
+## Version: 0.1
+## Title: 04-集成到系统中
+## Author: 听风
+## Notes: 整合到ESC插件设置中的内容
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+
+embeds.xml
+core.lua
