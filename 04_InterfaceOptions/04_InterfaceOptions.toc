@@ -1,0 +1,10 @@
+## Interface: 20300
+## Title: 04-集成到系统设置里
+## Author: 听风 
+## Notes: 系统设置里的设置
+
+### OptionalDeps: Ace3, LibSharedMedia-3.0, LibDBIcon-1.0, !BugGrabber
+## Description: 欢迎关注微信公众号“艾泽拉斯日常（azeroth-daily）”
+
+embeds.xml
+frame.lua

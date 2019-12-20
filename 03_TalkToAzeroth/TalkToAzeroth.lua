@@ -1,5 +1,5 @@
 -- /script talk(1, 5, "内容")
-
+ChatFrame1:AddMessage("talk")
 function talk(channel, time_pad, msg)
     T,F=T or 0,F or CreateFrame("frame")
     if TALK then 
