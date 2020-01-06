@@ -1,8 +1,8 @@
-WelcomeHome = LibStub("AceAddon-3.0"):NewAddon("WelcomeHome", "AceConsole-3.0")
+WelcomeHome = LibStub("AceAddon-3.0"):NewAddon("WH", "AceConsole-3.0")
 
 local options = {
-    name = "WelcomeHome",
-    hadler = WelcomeHome,
+    name = "这里是插件显示",
+    handler = WelcomeHome,
     type = 'group',
     args = {
         msg = {
@@ -20,10 +20,9 @@ function WelcomeHome:OnInitialize()
     -- Called when the addon is loaded
 
     -- Interface Frame
-    LibStub("AceConfig-3.0"):RegisterOptionsTable("WelcomeHome", options)
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("WH", options, {"wh"})
 
-    self.optionsFrame = LibStub("AceConfigDialog-3.0"):
-    AddToBlizOptions("WelcomeHome", "WelcomeHome")
+    self.optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("WH", "WelcomeHome")
     self.RegisterChatCommand("wh", "ChatCommand")
     WelcomeHome.message = "Welcome home!"
 end
@@ -31,6 +30,7 @@ end
 function WelcomeHome:ChatCommand(input)
     if not input or input:trim() == "" then
         InterfaceOptionsFrame_OpenToCategory(self.optionsFrame)
+        UIErrorsFrame:AddMessage(self.message, 1.0, 1.0, 1.0, 5.0)
     else
         LibStub("AceConfigCmd-3.0"):HandleCommand("wh", "WelcomeHome", input)
     end

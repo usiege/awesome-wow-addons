@@ -3,14 +3,14 @@ local addonName, addon = ...
 if not addon.healthCheck then return end
 local L = addon.L
 
-for k,v in pairs(addon) do
-	print(k,v)
-end
+-- for k,v in pairs(addon) do
+-- 	print(k,v)
+-- end
 
 local frame = addon.frame
 frame.name = addonName
 frame:Hide()
-【
+
 frame:SetScript("OnShow", function(frame)
 	local function newCheckbox(label, description, onClick)
 		local check = CreateFrame("CheckButton", "BugSackCheck" .. label, frame, "InterfaceOptionsCheckButtonTemplate")
