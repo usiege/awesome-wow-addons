@@ -5,7 +5,7 @@ wow addons
 
 更多内容请关注微信公众号“艾泽拉斯日常(azeroth-daily)”
 
-![二维码](https://s2.ax1x.com/2019/11/20/MflCb8.png)
+![二维码](./wecode.png)
 
 ### 04-集成到系统设置中
 
@@ -33,13 +33,6 @@ wow addons
 
 这里是引用的插件。
 
-### Cube
-
-[Cube](./Cube)
-
-### IGAS
-
-[IGAS](./IGAS)
 
 ### WowLua
 
