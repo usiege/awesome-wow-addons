@@ -4,7 +4,7 @@
 ## Author: 听风
 ## Notes: 整合到ESC插件设置中的内容
 ## OptionalDeps: Ace3
-## X-Embeds: Ace3
+### X-Embeds: Ace3
 
 embeds.xml
 core.lua

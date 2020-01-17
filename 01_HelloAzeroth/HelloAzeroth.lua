@@ -3,7 +3,7 @@
 function HelloWorldLoad(frame)
 	-- body
 	frame:Hide()
-	DEFAULT_CHAT_FRAME:AddMessage("HelloAzeroth is Loaded!");
+	-- DEFAULT_CHAT_FRAME:AddMessage("HelloAzeroth is Loaded!");
 	frame:RegisterEvent('CHAT_MSG_SAY')
 end
 
