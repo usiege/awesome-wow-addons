@@ -177,10 +177,8 @@ self.optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("WH", "Welco
 有了这个我们就了解到了插件设置只是更直观的使我们使用插件提供的功能，我们在自己DIY插件的时候可以把系统代码转化为可视化的内容，这样就可以使插件功能与代码分离，减少对修改代码的依赖。
 
 
-
-
-  [1]: http://static.zybuluo.com/usiege/aa2whndb3f7k16266gd3jkd7/addon-04-03.jpg
-  [2]: http://static.zybuluo.com/usiege/nlm5lp6ypbrl8wg3t2sdrevd/addon-04-04.png
-  [3]: http://static.zybuluo.com/usiege/8mm3f6h9u6c1l9ygk47zfzlb/addon-04-05.png
-  [4]: http://static.zybuluo.com/usiege/wxktibyhtklty51jmwnswf9e/addon-04-06.png
-  [5]: http://static.zybuluo.com/usiege/861vknhiazf687dnjn41sh62/addon-04-07.png
+[1]: http://static.zybuluo.com/usiege/aa2whndb3f7k16266gd3jkd7/addon-04-03.jpg
+[2]: http://static.zybuluo.com/usiege/nlm5lp6ypbrl8wg3t2sdrevd/addon-04-04.png
+[3]: http://static.zybuluo.com/usiege/8mm3f6h9u6c1l9ygk47zfzlb/addon-04-05.png
+[4]: http://static.zybuluo.com/usiege/wxktibyhtklty51jmwnswf9e/addon-04-06.png
+[5]: http://static.zybuluo.com/usiege/861vknhiazf687dnjn41sh62/addon-04-07.png
