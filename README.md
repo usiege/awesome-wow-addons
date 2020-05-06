@@ -28,6 +28,13 @@ wow addons
 [TingFeng](./TingFeng)
 
 
+## EXPORT
+内部导出暴雪API
+
+```
+ExportInterfaceFiles code 
+ExportInterfaceFiles art
+```
 
 ## IMPORT
 

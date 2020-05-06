@@ -3,7 +3,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.blizzard.com/wow/ui..\FrameXML\UI.xsd">
     <Button name="CombatTracker" parent="UIParent" enableMouse="true"
     movable="true" frameStrata="LOW">
-        <Size x="200" y="40"/>
+        <Size x="300" y="40"/>
         <Anchors>
             <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="Minimap">
                 <Offset x="0" y="0"/>

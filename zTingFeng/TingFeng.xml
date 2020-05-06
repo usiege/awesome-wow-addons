@@ -1,0 +1,51 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..FrameXMLUI.xsd">
+
+    <Frame name="MyFrame" parent="UIParent">
+        <!-- <size x="100" y="50"/> -->
+        <size>
+            <AbsDimension x="100" y="50">
+        </size>
+
+        <Anchors>
+            <Anchor point="CENTER" relativePoint="CENTER" relativeTo="UIParent">
+                <Offset x="0" y="0">
+            </Anchor>
+        </Anchors>
+
+        <Layers>
+            <Layer level="BAACKGROUND">
+                <FontString name="$parentMyText"/>
+                <Texture name="$parentMyGraphic"/>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="MyFrame2" parent="MyFrame" frameStrata="HIGH" frameLevel="5" toplevel="true">
+        <size>
+            <RelDimension x="0.5" y="0.5"/>
+        </size>
+
+        <Anchors>
+            <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeTo="MyFrame"/>
+        </Anchors>
+
+        <Layers>
+            <Layer level="BACKGOUND">
+                <Color r="1.0" g="0.1" b="0.1" a="0.1"/>
+                <Gradient orientation="VERTICAL">
+                    <MinColor r="0.1" g="0.1" b="0.1" a="0.1"/>
+                    <MaxColor r="0.1" g="1.0" b="0.1" a="0.1"/>
+                </Gradient>
+            </Layer>
+            
+
+            <Layer level="HIGHLIGHT">
+                <FontString setAllPoints="true" 
+                justfyV="MIDDLE" justfyH="CENTER" 
+                inherits="GameFontNormalHuge" text="Hello Azeroth!"/>
+            </Layer>
+        </Layers>
+    </Frame> 
+</Ui>
