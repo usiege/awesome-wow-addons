@@ -11,11 +11,8 @@
 ~~`/run CombatTrackerFrame:SetPoint("TOP", Minimap, "BOTTOM", 0, -10)`~~
 
 - 显示Lua错误
-首先在设置中，添加命令行参数"/console"
-`/console scriptErrors 1 to display LUA errors`
-
-
-##  
+`/console scriptErrors 1`
+to display LUA errors
 
 - 跑尸不灰屏
 `/console ffxDeath 0`

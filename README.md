@@ -53,6 +53,7 @@ ExportInterfaceFiles art
 ## COMMAND
 
 - [宏命令](./MACRO.md)
+- [游戏目录说明](./DIRREF.md)
 
 
 ## REFERENCE
