@@ -1,0 +1,21 @@
+## Interface: 30000
+## Title: Development Tools (v1.11)
+## Title-zhCN: Development Tools-跟踪事件
+## Notes: Debgugging, Exploration, and Diagnostic Tools (v1.11)
+## Author: Daniel Stephens/Iriel (iriel@vigilance-committee.org)
+## SavedVariables: DevTools_Options, DevTools_Events
+
+DevTools.lua
+DevToolsFormat.lua
+DevToolsVisFrame.lua
+DevToolsDump.lua
+DevToolsChatEvent.lua
+DevToolsFrameStack.lua
+DevToolsTreeList.lua
+DevToolsEventTraceStateList.lua
+DevToolsEventTraceClosure.lua
+DevToolsEventTrace.lua
+DevToolsEventTraceFormats.lua
+DevToolsEventTraceVisual.lua
+DevToolsEventTraceOptions.lua
+

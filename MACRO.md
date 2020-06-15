@@ -14,6 +14,9 @@
 `/console scriptErrors 1`
 to display LUA errors
 
+- 启用污染日志
+`/console taintLog 1`
+
 - 跑尸不灰屏
 `/console ffxDeath 0`
 

@@ -1,0 +1,45 @@
+<Bindings>
+  <Binding name="DEVTOOLS_FRAMESTACK_CYCLE"
+	   description="Toggle FrameStack Display"
+	   header="DEVTOOLS">
+    DevTools:FrameStack_Toggle()
+  </Binding>
+
+  <Binding name="DEVTOOLS_FRAMESTACK_ONHOLD"
+	   description="Toggle FrameStack Display when held"
+	   runOnUp="true">
+    DevTools:FrameStack_Toggle(keystate == "down");
+  </Binding>
+
+  <Binding name="DEVTOOLS_EVENTTRACE_START"
+	   description="Start devtools event tracing">
+    DevTools:EventTrace_Start();
+  </Binding>
+
+  <Binding name="DEVTOOLS_EVENTTRACE_STOP"
+	   description="Stop devtools event tracing">
+    DevTools:EventTrace_Stop();
+  </Binding>
+
+  <Binding name="DEVTOOLS_EVENTTRACE_FILL"
+	   description="Stop devtools event tracing until full">
+    DevTools:EventTrace_Start(true);
+  </Binding>
+
+  <Binding name="DEVTOOLS_EVENTTRACE_TOGGLE"
+	   description="Toggle devtools event tracing">
+    DevTools:EventTrace_Toggle();
+  </Binding>
+
+  <Binding name="DEVTOOLS_EVENTTRACE_ONHOLD"
+	   description="Toggle devtools event tracing while held"
+	   runOnUp="true">
+    DevTools:EventTrace_Toggle();
+  </Binding>
+
+  <Binding name="DEVTOOLS_EVENTTRACE_SHOW"
+	   description="Toggle visibility of DevTools event frame">
+    DevTools.EventTrace_SlashCommand("");
+  </Binding>
+
+</Bindings>

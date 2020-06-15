@@ -11,7 +11,9 @@
         <td>
             SendChatMessage("talk ...", "channel", nil, 1)
             <br>
-            在频道1发送文字 'talk ...'
+            说明：在频道1发送文字 'talk ...'
+
+            
         </td>
     </tr>
     <tr>
