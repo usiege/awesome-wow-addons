@@ -25,7 +25,7 @@ wow addons
 
 ### TingFeng
 
-[TingFeng](./TingFeng)
+[TingFeng](https://github.com/usiege/TingFeng)
 
 
 ## EXPORT
