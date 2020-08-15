@@ -1,4 +1,4 @@
-﻿-- Addon Initialize
+-- Addon Initialize
 IGAS:NewAddon "Cube.Mdl_Browser"
 
 -- Main Form

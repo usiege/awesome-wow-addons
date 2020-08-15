@@ -1,0 +1,29 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui"
+	xmlns:xsi='http:www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://www.blizzard.com/wow/ui..\FrameXML\UI.xsd'>
+<!-- <Ui> -->
+	<Frame name='MainFrame' parent='UIParent'>
+		<Size x='800' y='600'/>
+		<Anchors>
+			<Anchor point='CENTER' relativePoint='CENTER'>
+				<Offset>
+					<AbsDimension x='0' y='0'/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile='Interface\DialogFrame\UI-DialogBox-Background'
+			edgeFile='Interface\DialogFrame\UI-DialogBox-Border' tile='true'>
+			<TileSize>
+				<AbsValue val='30'/>
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val='30'/>
+			</EdgeSize>
+			<BackgroundInsets>
+				<AbsInset left='12' right='12' top='12' bottom='12'/>
+			</BackgroundInsets>
+		</Backdrop>
+		
+	</Frame>
+	<Script file='mgui.lua' />
+</Ui>

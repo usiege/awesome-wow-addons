@@ -1,4 +1,4 @@
-﻿<Bindings>
+<Bindings>
     <Binding name="CUBE_CODE" header="CUBE">
 		if IGAS.UIParent.Cube_Main then
 			IGAS.UIParent.Cube_Main.Visible = not IGAS.UIParent.Cube_Main.Visible

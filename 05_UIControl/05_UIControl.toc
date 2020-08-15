@@ -1,0 +1,8 @@
+## Interface: 11305
+## Title: 05-UIControl
+## Title-zhCN: 05-UI控件
+## Notes: 魔兽世界插件控件，从零开始编写
+## Author: 听风轻咛（wufaquhui@gmail.com）
+## Version: v0.0.1
+
+main.xml

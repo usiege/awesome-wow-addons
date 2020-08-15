@@ -1,4 +1,4 @@
-﻿local L = IGAS:NewLocale("Cube", "zhTW")
+local L = IGAS:NewLocale("Cube", "zhTW")
 if not L then return end
 
 L["Simple Dev Tool"] = "簡易開發工具"

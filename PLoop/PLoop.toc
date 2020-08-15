@@ -1,0 +1,10 @@
+## Interface: 80300
+## Title: [Lib] PLoop
+## Author: kurapica125@outlook.com
+## Version: v258
+## Notes: Prototype Lua object-oriented program system
+## URL: http://github.com/kurapica/PLoop
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+PLoop.xml

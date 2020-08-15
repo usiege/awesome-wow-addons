@@ -1,0 +1,40 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+    <Script file="Plateform.lua"/>
+
+    <!--Prototype-->
+    <Script file="Prototype.lua"/>
+
+    <!--System-->
+    <Script file="System\Text.lua"/>
+    <Script file="System\IO\TextAccessor.lua"/>
+    <Script file="System\Threading.lua"/>
+    <Script file="System\Serialization.lua"/>
+    <Script file="System\Date.lua"/>
+    <Script file="System\Logger.lua"/>
+    <Script file="System\Collections.lua"/>
+    <Script file="System\Recycle.lua"/>
+    <Script file="System\Configuration.lua"/>
+    <Script file="System\Observer.lua"/>
+
+    <!--System.Collections-->
+    <Script file="System\Collections\List.lua"/>
+    <Script file="System\Collections\Dictionary.lua"/>
+    <Script file="System\Collections\Proxy.lua"/>
+    <Script file="System\Collections\IIndexedListSorter.lua"/>
+    <Script file="System\Collections\Array.lua"/>
+    <Script file="System\Collections\Queue.lua"/>
+
+    <!--System.Serialization-->
+    <Script file="System\Serialization\LuaFormatProvider.lua"/>
+    <Script file="System\Serialization\StringFormatProvider.lua"/>
+
+    <!--System.Text-->
+    <Script file="System\Text\UTF8Encoding.lua"/>
+    <Script file="System\Text\UTF16Encoding.lua"/>
+
+    <!--System.Reactive-->
+    <Script file="System\Reactive\Observer.lua"/>
+    <Script file="System\Reactive\Observable.lua"/>
+    <Script file="System\Reactive\Subject.lua"/>
+    <Script file="System\Reactive\Operator.lua"/>
+</Ui>

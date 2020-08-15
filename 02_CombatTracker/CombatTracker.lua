@@ -1,4 +1,5 @@
 local tingfeng = ...;
+print(tingfeng)
 
 -- Set up some local variables to track time and damage
 local start_time = 0 
