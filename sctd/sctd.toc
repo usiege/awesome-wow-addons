@@ -1,0 +1,26 @@
+## Interface: 80000
+## Title: SCTD
+## Notes: Adds your damage to Scrolling Combat Text
+## Notes-ruRU: Выводит ваш урон в Scrolling Combat Text
+## Version: 7.1
+## Author: Grayhoof
+## Author-ruRU: Grayhoof (Перевод: StingerSoft)
+## Dependencies: sct
+## X-Website: http://grayhoof.wowinterface.com/
+## X-Category: Combat
+## X-RelSite-WoWI: 4913
+## OptionalDeps:
+## X-Curse-Packaged-Version: v7.1
+## X-Curse-Project-Name: SCT - Damage
+## X-Curse-Project-ID: sct-damage
+## X-Curse-Repository-ID: wow/sct-damage/mainline
+sctd.lua
+sctd.xml
+locals\localization.lua
+locals\localization.de.lua
+locals\localization.ru.lua
+locals\localization.fr.lua
+locals\localization.es.lua
+locals\localization.kr.lua
+locals\localization.tw.lua
+locals\localization.cn.lua

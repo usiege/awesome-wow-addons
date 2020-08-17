@@ -1,0 +1,23 @@
+## Interface: 80000
+## Title: SCTD Options
+## Title-ruRU: SCTD [Настройки]
+## Notes:  Options menu for SCTD (LoadOnDemand)
+## Notes-ruRU:  Меню настроек для SCTD (LoadOnDemand)
+## Author: Grayhoof
+## Dependencies: sct, sctd, sct_options
+## LoadOnDemand: 1
+## LoadWith: sct_options
+## X-Curse-Packaged-Version: v7.1
+## X-Curse-Project-Name: SCT - Damage
+## X-Curse-Project-ID: sct-damage
+## X-Curse-Repository-ID: wow/sct-damage/mainline
+locals\localization.lua
+locals\localization.de.lua
+locals\localization.ru.lua
+locals\localization.fr.lua
+locals\localization.es.lua
+locals\localization.kr.lua
+locals\localization.tw.lua
+locals\localization.cn.lua
+options.lua
+options.xml

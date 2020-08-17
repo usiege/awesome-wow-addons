@@ -1,0 +1,22 @@
+## Interface: 80000
+## Title: SCT Options
+## Notes: Options menu for SCT (LoadOnDemand)
+## Author: Grayhoof
+## Dependencies: sct
+## LoadOnDemand: 1
+## X-Curse-Packaged-Version: v7.1
+## X-Curse-Project-Name: ScrollingCombatText
+## X-Curse-Project-ID: scrolling-combat-text
+## X-Curse-Repository-ID: wow/scrolling-combat-text/mainline
+locals\localization.lua
+locals\localization.de.lua
+locals\localization.fr.lua
+locals\localization.es.lua
+locals\localization.kr.lua
+locals\localization.tw.lua
+locals\localization.cn.lua
+locals\localization.ru.lua
+options_setup.lua
+configs.lua
+options.lua
+options.xml

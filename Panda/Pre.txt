@@ -1,0 +1,3 @@
+2020-5-15
+SetBindingItem("key","name")--绑定饰品快捷键
+IsStealthed()--潜行

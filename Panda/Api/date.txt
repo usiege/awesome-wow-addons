@@ -1,0 +1,336 @@
+--[[
+--字符串转条件
+
+function StrToFunction(str)
+local sFunction = {}
+local out = true
+ns.PandaDB = PandaDB--配置
+
+    if str ~= nil and str ~= "" then
+        if sFunction[str] == nil then
+            local sF,Error = loadstring('return '..str)
+                if Error then
+                    error(Error)
+                    return
+                else
+                    setfenv(sF,ns)
+                    sFunction[str] = sF
+                end
+        end
+        out = sFunction[str]()
+    end
+return out
+end
+
+
+function ColorandID()
+local Class = select(2, UnitClass("player"))
+local Special = select(2, GetSpecializationInfo(GetSpecialization()))
+
+    for k, v in ipairs(ns.ActionList[Class][Special]) do
+	   
+        if StrToFunction(v.simc) == true then
+		
+ 	         color = v.color
+	         ID = v.ID	
+	        break
+        end
+		
+    end
+
+return color,ID
+
+end
+--]]
+---------------------------------------------------------------------------
+--[[                     由距离、角度内的姓名板统计目标数                               ]]--
+---------------------------------------------------------------------------
+--[[
+G_EnemyInfo = {}
+local NP_count = {}
+local NAMEPLATE_table = {}
+local TargetGUID = UnitGUID("target")
+local RangeCheck = LibStub( "LibRangeCheck-2.0" )
+local Nameplate_xOff = 1
+local Nameplate_yOff = 1
+
+local function OnUpdateNamePlate()
+    wipe(NAMEPLATE_table)
+    for k, v in pairs(C_NamePlate.GetNamePlates()) do
+        if v.namePlateUnitToken ~= nil then
+            NAMEPLATE_table[v.namePlateUnitToken] = v:GetName()
+        else
+            NAMEPLATE_table[v.unitFrame.unit] = v:GetName()
+        end
+    end
+end
+
+
+RegisterEvent("NAME_PLATE_UNIT_ADDED", function( event, NAMEPLATE )
+    
+    local GUID = UnitGUID(NAMEPLATE)
+    if G_EnemyInfo[GUID] then
+        G_EnemyInfo[GUID].NamePlate = NAMEPLATE
+    end
+    OnUpdateNamePlate()
+end )
+RegisterEvent( "NAME_PLATE_UNIT_REMOVED", function( event, NAMEPLATE )
+    local GUID = UnitGUID(NAMEPLATE)
+    G_EnemyInfo[GUID] = nil
+    
+    OnUpdateNamePlate()
+end )
+
+
+local function GetEnemyNumber() --更新目标数
+    local TargetFrame = C_NamePlate.GetNamePlateForUnit("target")
+    local TN_Angle,TN_Angle_L,TN_Angle_R = 0,-180,180
+    if TargetFrame then
+		local pixelSize = ConvertPixelsToUI(1, TargetFrame:GetEffectiveScale())
+		Nameplate_xOff = pixelSize * GetScreenWidth() / 2
+		Nameplate_yOff = pixelSize * GetScreenHeight() / 2
+        local TN_x,TN_y = TargetFrame:GetCenter()
+        TN_Angle = math.deg(math.atan2(TN_x - Nameplate_xOff,TN_y - Nameplate_yOff))
+        --print(TN_Angle)
+    end
+    for SpellID,v in pairs(NP_count) do
+        local Spell_name,_,_,_,Spell_minRange,Spell_maxRange = GetSpellInfo(SpellID)
+        if type(SpellID) == "number" then
+            if SpellID <= 50 then
+                Spell_maxRange = SpellID
+                Spell_minRange = 0
+            end
+        end
+        if not Spell_minRange then Spell_minRange = 0 end
+        local IS_SpellRange = (Spell_name ~= nil and (IsSpellInRange(Spell_name,"nameplate1") ~= nil or IsSpellInRange(Spell_name,"target") ~= nil ))
+        for Angle,n in pairs(NP_count[SpellID]) do
+            if UnitExists("target") then
+                TN_Angle_L = TN_Angle - Angle/2
+                TN_Angle_R = TN_Angle + Angle/2
+            end
+            for Range,n1 in pairs(NP_count[SpellID][Angle]) do
+                NP_count[SpellID][Angle][Range] = 0
+                for nameplate,NamePlate in pairs(NAMEPLATE_table) do
+					
+                    local IS_Angle = false
+                    if Angle ~= 360 then
+                        if UnitExists("target") then
+							
+                            local x,y = _G[NamePlate]:GetCenter()
+							local pixelSize = ConvertPixelsToUI(1, _G[NamePlate]:GetEffectiveScale())
+							Nameplate_xOff = pixelSize * GetScreenWidth() / 2
+							Nameplate_yOff = pixelSize * GetScreenHeight() / 2
+                            local N_Angle = math.deg(math.atan2(x - Nameplate_xOff,y - Nameplate_yOff))
+							--print(NamePlate,N_Angle)
+                            if N_Angle > TN_Angle_L and N_Angle < TN_Angle_R then
+                                IS_Angle = true
+                            end
+                        end
+                    else
+                        IS_Angle = true
+                    end
+                    local IS_InRange = false
+                    if Range == 0 then
+                        if IS_SpellRange  then
+                            if IsSpellInRange(Spell_name,nameplate) == 1 then IS_InRange = true end
+                        else
+                            local minRange,maxRange = RangeCheck:GetRange(nameplate)
+                            if minRange and maxRange then
+                                if minRange >= Spell_minRange and maxRange <= Spell_maxRange then IS_InRange = true end
+                            end
+                        end
+                    else
+                        if TargetGUID and UnitExists(nameplate)then
+                            local minRange,maxRange = RangeCheck:GetRange(nameplate)
+                            local TN_minRange,TN_maxRange = RangeCheck:GetRange("target")
+                            if TN_minRange == nil then TN_minRange = 0 end
+                            if TN_maxRange == nil then TN_maxRange = 5 end
+                            if minRange == nil then minRange = 0 end
+                            if maxRange == nil then maxRange = 5 end
+                            if Range == nil then Range = 5 end
+                            if minRange >= TN_minRange - Range and maxRange <= TN_maxRange + Range then IS_InRange = true end
+                        end
+                    end
+                    if IS_InRange and IS_Angle and UnitExists(nameplate) and (not UnitIsDead(nameplate)) and UnitCanAttack('player',nameplate) and (GetUnitName(nameplate) ~= "爆炸物" and GetUnitName(nameplate) ~= "火花机器人") then
+                        NP_count[SpellID][Angle][Range] = NP_count[SpellID][Angle][Range] + 1
+                    end
+                end
+            end
+        end
+    end
+end
+
+function EnemyNum(SpellID,Angle,Range)  --可以填入3种数据。技能名，技能id或距离。填入纯数字时，小于等于50时。按距离算。大于50按技能id。Angle为空时。判断所有。如果填入角度。为以目标中心角度覆盖范围内.Range不为0时。计算目标距离正负Range内的敌人数量。后面2个变量非空时，无目标返回0的敌人数量
+    if not Angle then Angle = 360 end
+    if not Range then Range = 0 end
+    NP_count[SpellID] = NP_count[SpellID] or {}
+    NP_count[SpellID][Angle] = NP_count[SpellID][Angle] or {}
+    NP_count[SpellID][Angle][Range] = NP_count[SpellID][Angle][Range] or 0
+    return NP_count[SpellID][Angle][Range]
+end
+--]]
+---------------------------------------------------------------------------
+--[[                     由伤害、距离、角度结合统计的目标数(多用于远程)                               ]]--
+---------------------------------------------------------------------------
+--[[
+function NewEnemyNum(Range,Angle)
+   local n = 0
+   local ByDamage = GetTargetsCountByDamage()
+   local ByAngle = EnemyNum(Range,Angle)
+   
+   if ByDamage < 3 then  n =  ByAngle elseif ByDamage >= 3 then n = ByDamage end
+         
+   return n
+end
+--]]
+	
+---------------------------------------------------------------------------
+--[[                    远程目标数                              ]]--
+---------------------------------------------------------------------------
+function Remote_enemies(rang_1,rang_2)--距离范围0-40码，rang_1 - rang_2
+local A = InCombat_enemies(rang_1)
+local B = GetTargetsCountByDamage()
+local C = enemies(rang_2)
+local D 
+local E 
+local maxOfT
+
+if C > 1 then
+
+if A > B then D = A else D = B end
+if B == 0 then E = C else E = B end
+
+    local t= {
+	    D,
+		E
+		} 
+    
+ maxOfT = floor(math.max(unpack(t)))--计算最大值
+
+elseif C <= 1 then 
+ 
+ maxOfT = C
+
+end 
+    --AOESwitch()用来限制单体AOE自动判断，AOESwitch()则强制为单目标
+	if AOESwitch() then maxOfT = 1
+    elseif not AOESwitch() then maxOfT = maxOfT 
+    end
+  
+  return maxOfT
+end
+
+local G_cb_time = G_cb_time or GetTime()
+local G_combat2 = G_combat2 or false
+local InCombat
+
+--事件：进入战斗
+RegisterEvent("PLAYER_REGEN_DISABLED", function()
+InCombat = true
+if G_combat2 == false then
+      G_combat2 = true
+      G_cb_time = GetTime()
+end
+end)
+
+--事件：离开战斗
+RegisterEvent("PLAYER_REGEN_ENABLED", function()
+InCombat = false
+if G_combat2 == true then
+    G_combat2 = false
+end
+end)
+
+--进入战斗 t 秒内
+function time_x(t)
+    local out = false
+    if (G_combat2 == true and GetTime() - G_cb_time  <t) or InCombat == false then
+        out = true
+    end
+    return out
+end
+
+--进入战斗 t 秒后
+function time_d(t)
+    local out = false
+    if (G_combat2 == true and GetTime() - G_cb_time  >t) then
+        out = true
+    end
+    return out
+end
+
+--暴君吞噬加成
+
+local Summon = {} 
+Summon.petTable = {} 
+Summon.power = 0 
+Summon.snapShotPower = 0 
+Summon.tyrantExist = false 
+
+Summon.update_power = function() 
+    local power = 0 
+    for k,v in pairs(Summon.petTable) do 
+        power = power + Summon.petTable[k][2] 
+    end   
+    Summon.power = power 
+end 
+ 
+RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED", function(event) 
+        local time = GetTime() 
+
+        
+        if event == "COMBAT_LOG_EVENT_UNFILTERED" then 
+            local timeStamp = CombatLogGetCurrentEventInfo() 
+            local subEvent = select(2, CombatLogGetCurrentEventInfo()) 
+            local sourceGUID = select(4, CombatLogGetCurrentEventInfo()) 
+            local sourceName = select(5, CombatLogGetCurrentEventInfo()) 
+            local destGUID = select(8, CombatLogGetCurrentEventInfo()) 
+            local spellId = select(12, CombatLogGetCurrentEventInfo()) 
+            
+            if subEvent == "SPELL_SUMMON" and spellId == 265187  and sourceGUID == UnitGUID("player") then 
+                
+                Summon.snapShotPower = Summon.power 
+                Summon.tyrantExist = true 
+                Summon.power = 0 
+                Summon.petTable = {} 
+                
+                
+            elseif subEvent == "SPELL_CAST_SUCCESS" and spellId == 196277 and sourceGUID == UnitGUID("player") then 
+                
+                Summon.power = 0 
+                Summon.petTable = {} 
+                
+            elseif spellId == 265273 and subEvent == "SPELL_AURA_REMOVED" and sourceGUID == UnitGUID("player")  then 
+                Summon.snapShotPower = 0 
+                Summon.tyrantExist = false 
+                Summon.update_power() 
+                -- print(Summon.power,Summon.snapShotPower) 
+            elseif subEvent == "SPELL_CAST_SUCCESS" and spellId == 104318 and Summon.petTable[sourceGUID] then 
+                if not Summon.tyrantExist and Summon.petTable[sourceGUID] then 
+                    Summon.petTable[sourceGUID][2] = Summon.petTable[sourceGUID][2] - 10 
+                    Summon.update_power() 
+                end 
+                
+            elseif subEvent == "SPELL_SUMMON" and (spellId == 104317 or spellId == 279910) and sourceGUID == UnitGUID("player") then 
+                Summon.petTable[destGUID] = {time, 50} 
+                Summon.update_power() 
+            elseif subEvent == "UNIT_DIED" or subEvent == "UNIT_DESTROYED" or subEvent == "UNIT_DISSIPATES" then 
+                if Summon.petTable[destGUID] then 
+                    Summon.petTable[destGUID] = nil 
+                    Summon.update_power() 
+                end 
+                
+            end 
+        end 
+        
+    end 
+)
+
+
+function Summon_Power()
+    if Summon.snapShotPower >0 then 
+        return Summon.snapShotPower
+     else 
+        return Summon.power
+    end 
+end

@@ -1,0 +1,34 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.blizzard.com/wow/ui..\FrameXML\UI.xsd">
+
+	<Frame name="CCFrame" parent="UIParent" frameStrata="HIGH" frameLevel="1"> 
+	  <Size x="30" y="30" /> 
+	  <Anchors> 
+	    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" /> 
+	  </Anchors> 
+	  <Layers>
+		<Layer level="BACKGROUND" setAllPoints="true">
+			<Texture name="$parentTexture">
+				<Color r="1.0" g="1.0" b="1.0" a="1.0" />
+			</Texture>
+		</Layer>
+	  </Layers>
+	</Frame>
+
+<!-- 	<Frame name="MarkFrame" parent="CCFrame" frameStrata="HIGH" frameLevel="2">
+		<setAllPoints>
+	  	<Size x="10" y="10" />
+		<Anchors> 
+		   <Anchor point="BUTTOMRIGHT" relativePoint="BUTTOMRIGHT" /> 
+		</Anchors> 
+		<Layers>
+			<Layer level="BACKGROUND" setAllPoints="true">
+				<Texture name="$parentTexture">
+					<Color r="1.0" g="0.0" b="0.0" a="1.0" />
+				</Texture>
+			</Layer>
+		</Layers>
+	</Frame> -->
+
+</Ui>
