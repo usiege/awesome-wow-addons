@@ -38,7 +38,11 @@ ExportInterfaceFiles art
 
 ## IMPORT
 
-这里是引用的插件。
+这里是引用的插件和工具。
+
+### 工具
+
+- [WoW-Addon-Manager](https://github.com/Lund259/WoW-Addon-Manager)
 
 ### WowLua
 
