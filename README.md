@@ -1,5 +1,5 @@
 # Addons
-wow addons
+wow addons for __classic__
 
 ## 听风的插件DIY
 
