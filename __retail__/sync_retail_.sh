@@ -1,10 +1,5 @@
 #!/bin/bash
 # please chmod +x .sh for acquire authority
-# if on linux terminal
-# you should run this blew:
-# $ sed 's/\r//g' sync_retail.sh > sync_retail_.sh
-# so that you can covert \r\n to \n
-
 echo "This sh will sync file to wow addons path!"
 avr="this is a avr"
 # echo '-------  sorce_path ------------'

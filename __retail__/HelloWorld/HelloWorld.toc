@@ -1,0 +1,4 @@
+## Interface: 30100
+## Title: Hello, Azeroth world!
+## Title-zhCN: 你好，艾泽拉斯世界
+## Note: This is the first Addons by TingFeng.
