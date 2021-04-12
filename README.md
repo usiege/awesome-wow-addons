@@ -7,21 +7,6 @@ wow addons for __classic__
 
 ![二维码](./wecode.png)
 
-### 04-集成到系统设置中
-
-[InterfaceOptions](./04_InterfaceOptions)
-
-### 03-与世界对话
-
-[TalkToAzeroth](./03_TalkToAzeroth)
-
-### 02-战斗进行中...
-
-[CombatTracker](./02_CombatTracker)
-
-### 01-你好艾泽拉斯
-
-[HelloAzeroth](./01_HelloAzeroth)
 
 ### TingFeng
 
