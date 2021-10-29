@@ -34,6 +34,8 @@ ExportInterfaceFiles art
 
 > 外部辅助工具
 
+- [BLP2PNG](https://www.wowinterface.com/downloads/info6127-BLP2PNG.html)
+- [BLPViewer](https://www.wowinterface.com/downloads/info16700-BLPView.html)
 - [WoW-Addon-Manager](https://github.com/Lund259/WoW-Addon-Manager)
 ### 插件
 
@@ -42,8 +44,7 @@ ExportInterfaceFiles art
 
 ## REFERENCE
 
-- [BLPViewer](https://www.wowinterface.com/downloads/info16700-BLPView.html)
-- [BLP2PNG](https://www.wowinterface.com/downloads/info6127-BLP2PNG.html)
+- [Wago](https://wago.io)
 
 - [MACROS](http://www.battlenet.top/)
 - [CurseForge](https://www.curseforge.com/)
@@ -51,12 +52,10 @@ ExportInterfaceFiles art
 - [apiwiki](https://wowpedia.fandom.com/wiki)
 - [wowwiki](https://wowwiki-archive.fandom.com/wiki)
 
-- [WowInterface](https://wowinterface.com/)
-- [Townlong Yak](https://www.townlong-yak.com/)
-
-- [Wago](https://wago.io)
 - [WowHead](https://www.wowhead.com/)
+- [WowInterface](https://wowinterface.com/)
 
+- [Townlong Yak](https://www.townlong-yak.com/)
 - [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
 
 ## 听风轻咛
