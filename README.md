@@ -40,8 +40,15 @@ ExportInterfaceFiles art
 
 ## REFERENCE
 
+- [BLPViewer](https://www.wowinterface.com/downloads/info16700-BLPView.html)
+- [BLP2PNG](https://www.wowinterface.com/downloads/info6127-BLP2PNG.html)
+
 - [MACROS](http://www.battlenet.top/)
 - [CurseForge](https://www.curseforge.com/)
+
+- [apiwiki](https://wowpedia.fandom.com/wiki)
+- [wowwiki](https://wowwiki-archive.fandom.com/wiki)
+
 - [WowInterface](https://wowinterface.com/)
 - [Townlong Yak](https://www.townlong-yak.com/)
 
