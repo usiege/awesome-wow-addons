@@ -1,19 +1,12 @@
 # Addons
 wow addons for __classic__
 
-## 听风的插件DIY
+## TingFeng
 
-更多内容请关注微信公众号“艾泽拉斯日常(azeroth-daily)”
-
-![二维码](./wecode.png)
-
-
-### TingFeng
-
-[TingFeng](https://github.com/usiege/TingFeng)
-
+- [TingFeng](https://github.com/usiege/TingFeng)
 
 ## EXPORT
+
 内部导出暴雪API
 
 ```
@@ -27,10 +20,6 @@ ExportInterfaceFiles art
 
 ### 工具
 
-> 外部辅助工具
-
-- [WoW-Addon-Manager](https://github.com/Lund259/WoW-Addon-Manager)
-
 > 游戏内编码工具
 
 - [cube](./Cube)
@@ -43,10 +32,13 @@ ExportInterfaceFiles art
 - [BugSack](./BugSack)
 - [BugGrabber](./BugGrabber)
 
+> 外部辅助工具
+
+- [WoW-Addon-Manager](https://github.com/Lund259/WoW-Addon-Manager)
 ### 插件
 
 - [idTip](./idTip)
-
+- [TSM](https://www.tradeskillmaster.com)
 
 ## REFERENCE
 
@@ -67,5 +59,8 @@ ExportInterfaceFiles art
 
 - [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
 
+## 听风轻咛
 
+更多内容请关注微信公众号“艾泽拉斯日常(azeroth-daily)”
 
+![二维码](./wecode.png)
