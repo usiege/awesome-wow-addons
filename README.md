@@ -36,6 +36,7 @@ ExportInterfaceFiles art
 - [DevTools](./DevTools)
 - [BugSack](./BugSack)
 - [BugGrabber](./BugGrabber)
+- [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
 
 > 外部辅助工具
 
@@ -49,23 +50,18 @@ ExportInterfaceFiles art
 
 ## REFERENCE
 
-- [Wago](https://wago.io)
+- [Wago: https://wago.io](https://wago.io)
 
+- [MACROS: http://www.battlenet.top/](http://www.battlenet.top/)
+- [CurseForge: https://www.curseforge.com/](https://www.curseforge.com/)
 
-- [MACROS](http://www.battlenet.top/)
-- [CurseForge](https://www.curseforge.com/)
+- [apiwiki: https://wowpedia.fandom.com/wiki](https://wowpedia.fandom.com/wiki)
+- [wowwiki: https://wowwiki-archive.fandom.com/wiki](https://wowwiki-archive.fandom.com/wiki)
 
+- [WowHead: https://www.wowhead.com/](https://www.wowhead.com/)
+- [WowInterface: https://wowinterface.com/](https://wowinterface.com/)
 
-- [apiwiki](https://wowpedia.fandom.com/wiki)
-- [wowwiki](https://wowwiki-archive.fandom.com/wiki)
-
-
-- [WowHead](https://www.wowhead.com/)
-- [WowInterface](https://wowinterface.com/)
-
-
-- [Townlong Yak](https://www.townlong-yak.com/)
-- [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
+- [Townlong Yak: https://www.townlong-yak.com/](https://www.townlong-yak.com/)
 
 ## 听风轻咛
 
