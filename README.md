@@ -1,9 +1,14 @@
-# Addons
-wow addons for __classic__
+# awesome-wow-addons
 
+听风的魔兽世界资料收集
+
+
+## awesome-wow
+
+- [awesome-wow](https://github.com/JuanjoSalvador/awesome-wow)
 ## TingFeng
 
-- [TingFeng](https://github.com/usiege/TingFeng)
+- [TingFeng的自用资料库](https://github.com/usiege/TingFeng)
 
 ## EXPORT
 
@@ -46,14 +51,18 @@ ExportInterfaceFiles art
 
 - [Wago](https://wago.io)
 
+
 - [MACROS](http://www.battlenet.top/)
 - [CurseForge](https://www.curseforge.com/)
+
 
 - [apiwiki](https://wowpedia.fandom.com/wiki)
 - [wowwiki](https://wowwiki-archive.fandom.com/wiki)
 
+
 - [WowHead](https://www.wowhead.com/)
 - [WowInterface](https://wowinterface.com/)
+
 
 - [Townlong Yak](https://www.townlong-yak.com/)
 - [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
