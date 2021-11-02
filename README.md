@@ -6,6 +6,8 @@
 ## awesome-wow
 
 - [awesome-wow](https://github.com/JuanjoSalvador/awesome-wow)
+- [world-of-warcraft](https://github.com/usiege/World-Of-Warcraft)
+
 ## TingFeng
 
 - [听风的文章资料库](https://github.com/usiege/publisher)
