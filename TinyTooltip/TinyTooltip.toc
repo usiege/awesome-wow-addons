@@ -1,0 +1,25 @@
+## Interface: 80200
+## Title: TinyTooltip
+## Title-zhCN: 鼠标提示
+## Notes: TinyTooltip
+## Author: M
+## Version: 8.2.1
+## SavedVariables: BigTipDB
+## SavedVariablesPerCharacter: TinyTooltipCharacterDB
+
+libs\lib.xml
+Core.lua
+Config.lua
+General.lua
+Anchor.lua
+Unit.lua
+Target.lua
+Model.lua
+Item.lua
+Spell.lua
+Quest.lua
+LinkID.lua
+SkinFrames.lua
+
+locales\locales.xml
+Options.lua
