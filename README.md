@@ -1,14 +1,17 @@
 # awesome-wow-addons
 
-听风的魔兽世界资料收集
+魔兽世界资料收集
 
 
 ## awesome-wow
 
 - [awesome-wow](https://github.com/JuanjoSalvador/awesome-wow)
+- [world-of-warcraft](https://github.com/usiege/World-Of-Warcraft)
+
 ## TingFeng
 
-- [TingFeng的自用资料库](https://github.com/usiege/TingFeng)
+- [听风的文章资料库](https://github.com/usiege/publisher)
+- [听风的自用代码库](https://github.com/usiege/TingFeng)
 
 ## EXPORT
 
