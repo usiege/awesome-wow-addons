@@ -1,0 +1,20 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+    <!-- UI Base -->
+    <Script file="UI.lua"/>
+
+    <!-- UI Core System:UIObject&Style&Property -->
+    <Script file="Core.lua"/>
+
+    <!-- UI Widgets -->
+    <Script file="Widget.lua"/>
+
+    <!-- UI Widget Properties -->
+    <Script file="Property.lua"/>
+
+    <!-- Share Templates -->
+    <Script file="ElementPanel.lua"/>
+    <Script file="CooldownTemplate.lua"/>
+
+    <!-- UI Property Observable -->
+    <Script file="Reactive.lua"/>
+</Ui>

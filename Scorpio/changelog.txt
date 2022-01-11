@@ -1,0 +1,183 @@
+2021/10/24 v136
+	1. A dynamic task threshold mechanism added, so the cpu time may be required more for too many tasks.
+	2. The lower priority task will be level up as normal priority if not handled after several phases to avoid the timer not work when there is too many normal or high tasks.
+
+2021/09/28 v129
+	1. Remove a cache check which cause the raid panel doesn't show all the units.
+
+2021/09/28 v127
+	1. Wow.FromNextUnitEvent added, so no need use Next for the Health & Power Subject, this'd reduce the task count for performance.
+
+2021/09/26 v124
+	1. Add token for the Observable to stop its operations correctly.
+
+2021/09/15 v118
+	1. Wow.GetFrame(uitype, observable|event name|observable property name) is added, it'll combine the parent that match the uitype with the
+	observable datas(as the first value) to the next.
+
+2021/09/08 v116
+	1. Fix the Next method to observable, it'll cause mass display errors.
+
+2021/09/04 v112
+	1. The unit like targettarget, part1target will be converted to the real unit for unit event mapping like boss1 through the GUID if that unit existed.
+	2. `__Message__` and SendAddonMessage is added, it's a full message framework, async encode API is added for base64 and deflate.
+	3. Unit Died Combat Log Event will trigger the UNIT_HEALTH for updating.
+	4. The hover spell support spell sub level in classic now.
+
+
+2021/08/29 v111
+	1. Fix the flash of the cast bar.
+	2. Fix the Wow.UnitCastInterruptible for channel spell.
+
+2021/08/28 v110
+	1. Fix the flash of the SecureGroupPanel to force the refreshing.
+	2. Fix the ready check logic.
+
+2021/08/20 v108
+	1. Add the unregister unit frame operation when secure group panel is deleted, so re-use them won't cause all unit settings continuely be cleared.
+
+2021/08/16 v106
+	1. The PLoop and other Scorpio Libs are embedded into the Scorpio.
+
+2021/08/05 v105
+	1. ActiveTreeNode and ClearTreeNodes is added to the TreeView.
+
+2021/08/05 v104
+	1. Fix the warrior can't swap the main action bar in classic client.
+	2. OnNodeRightClick event is added to the TreeView, ToggleTreeNode is added to the TreeView.
+
+
+2021/07/21 v103
+	1. make the cooldown of action button's hideCountdownNumbers default to false.
+
+2021/07/17 v102
+	1. Improve the support to RotateDegree.
+	2. The PredictionHealthBar now display based on its orientation.
+
+2021/07/10 v100
+	1. Add charge cooldown support to Scorpio.Action system.
+
+2021/07/05 v099
+	1. Wow.UnitHealthLost, Wow.UnitHealthLostFrequent, Wow.UnitHealthLostPercentFrequent API added for unit frames.
+
+2021/06/30 v096
+	1. Fix the spell alert not hide.
+	2. Add support to LibHealComm-4.0, so when you install the lib, you can enjoy the incoming health in classic.
+	3. Fix action handler error for the classic version.
+
+2021/06/25 v086
+	1. The SecureActionButton System done, with the reactive style system.
+
+2021/01/11 v059
+	1. The UnitFrame System is finished and the Reactive For Style System is already done.
+
+2020/11/20 v057
+	1. Fix the code editor with "|".
+
+2020/11/19 v056
+	1. The code editor support UTF-8 now.
+
+2020/10/22 v55
+	1. The CodeEditor is improved, undo/redo is now all functional.
+
+2020/07/12 v38
+	1. The `__AsyncSingle__` can works for the class method and static method, for object method, each object can only have one coroutine running for the same method, for static method, for all objects, only on running coroutine is allowed.
+
+2020/07/06 v37
+	1. Fix some bugs in the child property and style system.
+	2. Add override for the ui style properties, so the 'setAllPoints = true' settings will override the 'location' settings, they won't both work, that would cause conflict.
+	3. __AsyncSingle__ attribute added for functions and methods, so the async function can only have one coroutine running at the same time.
+
+2020/05/05 v36
+	1. The Scorpio.UI & Scorpio.Widget Lib are finished.
+
+2019/07/31
+	1. Style Class system is fixed to support changes.
+
+2019/07/30
+	1. Remove the __Final__ attribute from the Scorpio class, so it can be inherited.
+
+2019/07/29
+	1. __Service__ is added used to mark the target method as an async service so it'd be automatically processed when the addon is loaded, and the system will try to re-process it if the process is dead as required.
+	2. Scorpio.UI.Style system added.
+
+2019/04/20
+	1. Basic UI system finished.
+	2. Basic UI style system finished.
+	3. Fix a check in the task system, function with one argument may be treated as non-argument.
+	4. Hook system is removed, since it's useless, we only need use secure hook system.
+
+2018/07/27
+	1. Add the missing code for cache recycle
+
+2018/07/25
+	1. Fix the OnSpecChanged event don't fire when player's spec is changed by the battlefield.
+
+2018/07/21
+	1. You can use Color.FromHSV(h, s, v) to generate color from HSV, or use color:ToHSV() to generate the hsv value.
+	2. You can use Color.FromHSL(h, s, l) to generate color from HSL, or use color:ToHSL() to generate the hsl value.
+
+2018/05/13
+	1. Fix the Localization not works well.
+
+2018/04/16
+	1. Update for PLoop v210
+
+2018/03/26
+	1. Update for PLoop v201
+	2. Rename the Scorpio.Event -> Scorpio.NextEvent to avoid the conflict with System.Event
+
+2018/02/11
+	__NoCombat__ can be used on class methods now.
+
+2017/12/14
+	New static method added to support wait for next object-method call, works like "Event", "Wait" API:
+		* NextCall([func, ][target, ]targetFunc[, ...])  		-- Wait next un-secure call
+		* NextSecureCall([func, ][target, ]targetFunc[, ...]) 	-- Wait next secure call
+
+	New method added to get handlers for hook :
+		* GetHookHandler(self, [target,] targetFunc)
+		* GetSecureHookHandler(self, [target,] targetFunc)
+
+2017/09/25
+	New GetRegisteredEventHandler API for Scorpio module.
+
+2017/08/29
+	Fix the char saved varables can't be generated if the toc don't hav
+
+2017/03/05
+	Fix __AddonSecureHook__ not works as demand. NEString is removed to PLoop.
+
+	If the slash command's handler return false, it's helper message would be printed. Like :
+
+		__SlashCmd__ "test" "lock" "on/off - Lock the action"
+		function LockAction(info)
+			if info ~= "on" and info ~= "off" then return false end
+		end
+
+		-- Use /test lock 111, helper message would be printed as
+		--======================--
+		/test lock on/off - Lock the action
+		--======================--
+
+	Also you can do it by yourselves, just don't return the false value
+
+2017/02/16
+	Fix the OnLoad and OnEnable won't fire for sub-addons with like 'MainAddonName_SubAddon' 'MainAddonName.SubAddon'.
+
+2017/01/14
+	Fix the OnLoad won't fire for the child-modules.
+	Default slash command handler added, see the introduction for more informations.
+
+2016/12/29
+	The NoCombat(func, ...) also would call the func in a thread now.
+	Fix the ScorpioManager's ADDON_LOADED
+
+2016/12/28
+	Fix the weak table cause thread task be collected.
+
+2016/12/27
+	Re-design the localization system.
+
+2016/12/22
+	Init the alpha version, no-ui part finished.

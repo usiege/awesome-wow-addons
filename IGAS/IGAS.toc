@@ -1,0 +1,18 @@
+## Interface: 70000
+## Title: Lib: IGAS
+## Author: kurapica.igas@gmail.com
+## Version: v97
+## Notes: In-game addon system
+## URL: http://github.com/kurapica
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: IGAS_DB
+## SavedVariablesPerCharacter: IGAS_DB_Char
+## X-Curse-Packaged-Version: v97
+## X-Curse-Project-Name: IGAS
+## X-Curse-Project-ID: igas
+## X-Curse-Repository-ID: wow/igas/mainline
+## X-Mush-Project-Father: Cube
+## X-Mush-Packaged-Version: 1
+
+IGAS.xml
