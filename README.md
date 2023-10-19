@@ -2,7 +2,6 @@
 
 魔兽世界资料收集
 
-
 ## awesome-wow
 
 - [awesome-wow](https://github.com/JuanjoSalvador/awesome-wow)
@@ -69,6 +68,12 @@ ExportInterfaceFiles art
 
 ## 听风轻咛
 
-更多内容请关注微信公众号“艾泽拉斯日常(azeroth-daily)”
+加入[“WC游戏社区”](https://www.kookapp.cn/app/invite/EGosAW)获取更多内容；
+
+或，更多内容请关注微信公众号“WowCube(wow_cube)”：
 
 ![二维码](./wecode.png)
+
+
+
+
