@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="TINYPAD_TOGGLE" header="TINYPAD" category="ADDONS">
+		TinyPad:Toggle()
+	</Binding>
+	<Binding name="TINYPAD_SEARCH" category="ADDONS">
+		TinyPad:TogglePanel()
+	</Binding>
+</Bindings>

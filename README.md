@@ -10,8 +10,34 @@
 
 ## TingFeng
 
-- [听风的文章资料库](https://github.com/usiege/publisher)
-- [听风的自用代码库](https://github.com/usiege/TingFeng)
+- [[听风]文章资料库](https://github.com/usiege/publisher)
+- [[听风]自用代码库](https://github.com/usiege/TingFeng)
+
+### 工具
+
+> 游戏内编码工具
+
+- [cube](./tools/Cube)
+- [wowlua](./tools/WowLua)
+- [tinypad](./tools/TinyPad)
+
+> 游戏内调拭工具
+
+- [DevTools](./tools/DevTools)
+- [BugSack](./tools/BugSack)
+- [BugGrabber](./tools/BugGrabber)
+- [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
+
+> 外部辅助工具
+
+- [BLP2PNG](https://www.wowinterface.com/downloads/info6127-BLP2PNG.html)
+- [BLPViewer](https://www.wowinterface.com/downloads/info16700-BLPView.html)
+- [WoW-Addon-Manager](https://github.com/Lund259/WoW-Addon-Manager)
+
+### 插件
+
+- [idTip](./tools/idTip)
+- [TSM](https://www.tradeskillmaster.com)
 
 ## EXPORT
 
@@ -25,31 +51,6 @@ ExportInterfaceFiles art
 ## IMPORT
 
 这里是引用的插件和工具。
-
-### 工具
-
-> 游戏内编码工具
-
-- [cube](./Cube)
-- [wowlua](./WowLua)
-- [tinypad](./TinyPad)
-
-> 游戏内调拭工具
-
-- [DevTools](./DevTools)
-- [BugSack](./BugSack)
-- [BugGrabber](./BugGrabber)
-- [Ace3 class](https://wow.gamepedia.com/WelcomeHome_-_Your_first_Ace3_Addon)
-
-> 外部辅助工具
-
-- [BLP2PNG](https://www.wowinterface.com/downloads/info6127-BLP2PNG.html)
-- [BLPViewer](https://www.wowinterface.com/downloads/info16700-BLPView.html)
-- [WoW-Addon-Manager](https://github.com/Lund259/WoW-Addon-Manager)
-### 插件
-
-- [idTip](./idTip)
-- [TSM](https://www.tradeskillmaster.com)
 
 ## REFERENCE
 

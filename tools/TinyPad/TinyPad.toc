@@ -1,0 +1,8 @@
+## Interface: 80000
+## Title: TinyPad
+## Notes: A notepad mod.
+## Author: Gello
+## Version: 2.1.8
+## SavedVariables: TinyPadPages, TinyPadSettings
+TinyPad.xml
+TinyPad.lua
