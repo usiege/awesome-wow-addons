@@ -50,15 +50,15 @@
 
 - CurseForge
 
-[https://www.curseforge.com/](https://www.curseforge.com/)
+[https://www.curseforge.com](https://www.curseforge.com/)
 
 - MACROS And API
 
-http://www.battlenet.top/](http://www.battlenet.top/)
+[http://www.battlenet.top](http://www.battlenet.top/)
 
 - apiwiki
 
-https://wowpedia.fandom.com/wiki](https://wowpedia.fandom.com/wiki)
+[https://wowpedia.fandom.com/wiki](https://wowpedia.fandom.com/wiki)
 
 - wowwiki
 
@@ -66,15 +66,15 @@ https://wowpedia.fandom.com/wiki](https://wowpedia.fandom.com/wiki)
 
 - WowHead 
 
-https://www.wowhead.com/](https://www.wowhead.com/)
+[https://www.wowhead.com](https://www.wowhead.com/)
 
 - WowInterface 
 
-[https://wowinterface.com/](https://wowinterface.com/)
+[https://wowinterface.com](https://wowinterface.com/)
 
 - Townlong Yak 
 
-https://www.townlong-yak.com/](https://www.townlong-yak.com/)
+[https://www.townlong-yak.com](https://www.townlong-yak.com/)
 
 
 ## EXPORT
