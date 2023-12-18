@@ -1,12 +1,24 @@
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
+
 # awesome-wow-addons
 
-魔兽世界资料收集
+> 魔兽世界资料收集（中文版）
+
+- [awesome-wow](#awesome-wow)
+    - [工具](#工具)
+    - [插件](#插件)
+    - [听风](#听风)
+    - [导出](#导出) 
+* [REFERENCE](#REFERENCE)
+* [WowCube](#WowCube)
+
+
 
 ## awesome-wow
 
 - [awesome-wow](https://github.com/JuanjoSalvador/awesome-wow)
-- [world-of-warcraft](https://github.com/usiege/World-Of-Warcraft)
 
+- [world-of-warcraft](https://github.com/usiege/World-Of-Warcraft)
 
 ### 工具
 
@@ -35,12 +47,20 @@
 - [TSM](https://www.tradeskillmaster.com)
 
 
-## TingFeng
+### 听风
 
 - [资料库](https://github.com/usiege/publisher)
 
 - [代码库](https://github.com/usiege/TingFeng)
 
+### 导出
+
+内部导出暴雪API
+
+```
+ExportInterfaceFiles code 
+ExportInterfaceFiles art
+```
 
 ## REFERENCE
 
@@ -76,15 +96,6 @@
 
 [https://www.townlong-yak.com](https://www.townlong-yak.com/)
 
-
-## EXPORT
-
-内部导出暴雪API
-
-```
-ExportInterfaceFiles code 
-ExportInterfaceFiles art
-```
 
 ## WowCube
 
